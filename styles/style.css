@@ -1,0 +1,68 @@
+.hero-section {
+    position: relative;
+}
+
+.hero-img {
+    height: 650px;
+    object-fit: cover;
+    filter: brightness(55%);
+}
+
+.hero-caption {
+    bottom: 25%;
+}
+
+.hero-caption h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-caption p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .hero-img {
+        height: 500px;
+    }
+
+    .hero-caption {
+        bottom: 18%;
+    }
+
+    .hero-caption h1 {
+        font-size: 2rem;
+    }
+
+    .hero-caption p {
+        font-size: 1rem;
+    }
+
+    .hero-caption .btn {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.service-card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.service-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card .btn {
+    margin-top: auto;
+}

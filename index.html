@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
@@ -45,6 +46,77 @@
     </nav>
 
     <main>
+        <hero class="hero-section">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="images/peter-thomas-ww_tiKkFGN4-unsplash.jpg" class="d-block w-100 hero-img"
+                            alt="Drywall installation project">
+                        <div class="carousel-caption hero-caption">
+                            <h1>Professional Drywall Services Since 2003</h1>
+                            <p>
+                                Quality drywall, metal stud framing, repairs, and finishing
+                                for residential and commercial projects.
+                            </p>
+                            <a href="#contact" class="btn btn-primary btn-lg me-2">Free Estimate</a>
+                            <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/dmytro-koplyk-q9iC2KKQw0M-unsplash.jpg" class="d-block w-100 hero-img"
+                            alt="Interior drywall construction">
+                        <div class="carousel-caption hero-caption">
+                            <h1>Residential & Commercial Projects</h1>
+                            <p>
+                                Reliable workmanship, clean finishes, and dependable service
+                                from start to finish.
+                            </p>
+                            <a href="#projects" class="btn btn-primary btn-lg me-2">View Projects</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/milan-malfait-KjSemLmT_yY-unsplash.jpg" class="d-block w-100 hero-img"
+                            alt="Finished drywall room">
+                        <div class="carousel-caption hero-caption">
+                            <h1>Built on Quality and Experience</h1>
+                            <p>
+                                Over 20 years of drywall experience with competitive pricing
+                                and free estimates.
+                            </p>
+                            <a href="#services" class="btn btn-primary btn-lg me-2">Our Services</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Get a Quote</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </hero>
+
         <section class="py-5">
             <div class="container">
                 <div class="row align-items-center min-vh-75">
@@ -79,7 +151,126 @@
                 </div>
             </div>
         </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">Our Services</h2>
+                    <p class="text-muted">Professional drywall services for residential and commercial projects.</p>
+                </div>
+
+                <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+                    <div class="carousel-inner">
+
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="card service-card h-100">
+                                        <img src="images/peter-thomas-ww_tiKkFGN4-unsplash.jpg"
+                                            class="card-img-top service-img" alt="Drywall installation">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Drywall Installation</h5>
+                                            <p class="card-text">Professional drywall installation for new construction,
+                                                remodels, and additions.</p>
+                                            <a href="#" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card service-card h-100">
+                                        <img src="images/milan-malfait-KjSemLmT_yY-unsplash.jpg"
+                                            class="card-img-top service-img" alt="Drywall finishing">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Drywall Finishing</h5>
+                                            <p class="card-text">Smooth, clean finishes ready for paint, texture, and
+                                                final completion.</p>
+                                            <a href="#" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card service-card h-100">
+                                        <img src="images/dmytro-koplyk-q9iC2KKQw0M-unsplash.jpg"
+                                            class="card-img-top service-img" alt="Metal stud framing">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Metal Stud Framing</h5>
+                                            <p class="card-text">Reliable framing for commercial and residential drywall
+                                                projects.</p>
+                                            <a href="#" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="card service-card h-100">
+                                        <img src="images/peter-thomas-ww_tiKkFGN4-unsplash.jpg"
+                                            class="card-img-top service-img" alt="Drywall repair">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Drywall Repair</h5>
+                                            <p class="card-text">Repairs for holes, cracks, water damage, and damaged
+                                                drywall areas.</p>
+                                            <a href="#" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card service-card h-100">
+                                        <img src="images/milan-malfait-KjSemLmT_yY-unsplash.jpg"
+                                            class="card-img-top service-img" alt="Texture matching">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Texture Matching</h5>
+                                            <p class="card-text">Clean texture work designed to blend with your existing
+                                                walls and ceilings.</p>
+                                            <a href="#" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card service-card h-100">
+                                        <img src="images/dmytro-koplyk-q9iC2KKQw0M-unsplash.jpg"
+                                            class="card-img-top service-img" alt="Commercial drywall">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Commercial Drywall</h5>
+                                            <p class="card-text">Drywall services for offices, retail spaces, tenant
+                                                improvements, and more.</p>
+                                            <a href="#" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
